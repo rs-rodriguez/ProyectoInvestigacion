@@ -56,7 +56,7 @@ namespace ProyectoInvestigacion
                     case 3:
                         if (flagInsert)
                         {
-                            methods.Eliminar(rut, sueldos);
+                            Eliminar();
                             break;
                         }
                         else
@@ -97,6 +97,58 @@ namespace ProyectoInvestigacion
                 }
                 Console.ReadKey();
                 Console.Clear();
+
+
+
+                //FUNCION ELIMINAR
+                void Eliminar()
+                {
+                    String[] rutCopy = rut;
+                    float[,] sueldosCopy = sueldos;
+
+                    rut = null;
+                    rut = new String[rutCopy.Length - 1];
+                    sueldos = null;
+                    sueldos = new float[sueldosCopy.Length - 1, 1];
+
+
+                    String Emp = "";
+                    //Busqueda de empleado
+                    Console.WriteLine("Ingrese el RUT del empleado a eliminar:");
+                    Emp = Console.ReadLine();
+
+                    for (int i = 0; i < rut.Length; i++)
+                    {
+                        for (int rt = 0; rt < rutCopy.Length; rt++)
+                        {
+                            if (!rutCopy[rt].Equals(Emp) && !rut.Contains(rutCopy[rt]))
+                            {
+                                rut[i] = rutCopy[rt];
+                                break;
+                            }
+                        }
+                    }
+
+                    for (int i = 0; i < rut.Length; i++)
+                    {
+                        for (int rt = 0; rt < rutCopy.Length; rt++)
+                        {
+                            if (rutCopy[rt].Equals(rut[i]))
+                            {
+                                for (int c = 0; c < sueldos.GetLength(1); c++)
+                                {
+                                    for (int sc = 0; sc < sueldosCopy.GetLength(1); sc++)
+                                    {
+                                        sueldos[i, c] = sueldosCopy[rt, sc];
+                                    }
+                                }
+                                break;
+                            }
+                        }
+                    }
+
+                    Console.WriteLine(msj);
+                }
             }
         }
     }

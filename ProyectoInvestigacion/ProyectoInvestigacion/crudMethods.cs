@@ -64,32 +64,14 @@ namespace ProyectoInvestigacion
             }
         }
 
-        public double getSueldo(int numero, float[,] sueldos)
+        public float getSueldo(int numero, float[,] sueldos)
         {
-            double sueldo = 0;
+            float sueldo = 0;
             for (int c = 0; c < sueldos.GetLength(1); c++)
             {
                 sueldo = sueldos[numero, c];
             }
             return sueldo;
-        }
-
-        //FUNCION ELIMINAR
-        public void Eliminar(String[] rut, float[,] sueldos)
-        {
-            String Emp = "";
-            //Busqueda de empleado
-            Console.WriteLine("Ingrese el RUT del empleado a eliminar:");
-            Emp = Console.ReadLine();
-            for (int i = 0; i < rut.Length; i++)
-            {
-                if (rut[i].Equals(Emp))
-                {
-                    rut[i].Remove(i);
-                }
-
-
-            }
         }
 
         //FUNCION PARA OBTENER LOS 10 BENEFICIARIOS
@@ -102,20 +84,23 @@ namespace ProyectoInvestigacion
             double bono = 0;
             double bonosTotal = 0;
             double sueldoTotal = 0;
-
+            int numeroEval = 10;
             //Ordenamos de menor a mayor los sueldos
            
             Console.WriteLine("LISTADO DE EMPLEADOS BENEFICIADOS ");
 
+            if (numeroEval > rut.Length)
+            {
+                numeroEval = rut.Length;
+            }
 
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < numeroEval; i++)
             {
                 //Asignamos los primeros 10, luego de reordenar el vector.
                 /* benefRUT[i] = rut[i];
                  benefSueldos[i] = sueldos[i];*/
 
                 //Calculamos el sueldo con sus bonos respectivos.
-
                 for (int c = 0; c < sueldos.GetLength(1); c++)
                 {
                     bono = sueldos[i, c] * 0.05;
@@ -145,7 +130,7 @@ namespace ProyectoInvestigacion
                 if (rut[i].Equals(encontrar))
                 {
                     encontrar = rut[i];
-                    sueldo = sueldos[i,i];
+                    sueldo = getSueldo(i, sueldos);
                 }
             }
             Console.WriteLine("Encontrado: " + encontrar + "\nSueldo: $" + sueldo);
