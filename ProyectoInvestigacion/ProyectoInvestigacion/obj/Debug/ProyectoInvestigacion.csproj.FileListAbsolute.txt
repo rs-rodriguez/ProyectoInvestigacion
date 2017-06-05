@@ -1,0 +1,12 @@
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.exe.config
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.exe
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.pdb
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.csprojResolveAssemblyReference.cache
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.exe
+C:\Users\krfac\Desktop\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.pdb
+C:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.exe.config
+C:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.exe
+C:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.pdb
+C:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\obj\Debug\ProyectoInvestigacion.csprojResolveAssemblyReference.cache
+c:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.exe
+c:\Users\HP\Google Drive\UFG\TERCER CICLO\Progra\ProyectoInvestigacion\ProyectoInvestigacion\bin\Debug\ProyectoInvestigacion.pdb
